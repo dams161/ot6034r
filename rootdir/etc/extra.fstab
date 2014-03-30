@@ -1,0 +1,10 @@
+# add here entries already existing in main device fstab, but for which you want a blk_device2, fs_type2 or fs_options2
+# mount point must be the same, mmcblk device must be your device true path
+# used to partition sdcard/usb disks and format it to ext2/ext3
+# used also to stat for size of mtd/yaffs2 partitions
+
+# blk_device2           # mount_point           fs_type2    fs_options2     flags (not used in extra.fstab code)
+/dev/block/mmcblk1p1   /storage/sdcard0 	auto	    defaults		defaults
+/dev/block/mmcblk1     /storage/sdcard1 	auto	    defaults		defaults
+
+
